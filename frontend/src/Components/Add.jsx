@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import "../App.css";
 
 const Add = () => {
   const [book, setBook] = useState({
@@ -27,7 +28,7 @@ const Add = () => {
   };
 
   return (
-    <div>
+    <div className="addBook">
       <h1>Add New Book</h1>
       <input
         type="text"
@@ -36,7 +37,7 @@ const Add = () => {
         onChange={handleChange}
       />
       <input
-        type="text"
+        type="file"
         placeholder="cover"
         name="cover"
         onChange={handleChange}

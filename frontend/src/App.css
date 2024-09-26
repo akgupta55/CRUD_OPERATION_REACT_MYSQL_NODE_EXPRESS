@@ -3,3 +3,115 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.books {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.books h1 {
+  margin-block: 20px;
+}
+
+.book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.card img {
+  height: 360px;
+  width: 240px;
+  background-color: aquamarine;
+  border: 2px solid orangered;
+  border-radius: 12px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+
+.btn button {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  height: 50px;
+  width: 100px;
+  color: green;
+  border: 1px solid green;
+  background-color: rgb(91, 250, 144);
+  border-radius: 20px;
+}
+
+.btn .danger {
+  color: red;
+  border: 1px solid red;
+  background-color: rgb(248, 153, 153);
+}
+
+.books .addbtn {
+  margin-block: 40px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  height: 50px;
+  width: 150px;
+  background-color: rgb(110, 243, 165);
+  border-radius: 20px;
+  border: 1px solid orangered;
+}
+
+a:-webkit-any-link {
+  color: red !important;
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.addBook {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.addBook input {
+  height: 35px;
+  width: 400px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid orangered;
+  font-size: 16px;
+  font-weight: 550;
+  outline: orangered;
+}
+
+.addBook button {
+  height: 35px;
+  width: 400px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid orangered;
+  background-color: orangered;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 550;
+}
